@@ -1,10 +1,10 @@
 import "./App.css";
-import ArrayTransoform from "./components/ArrayTransoform";
+import MultipleInputs from "./components/MultipleInputs";
 
 export default function App() {
   return (
     <>
-      <ArrayTransoform/>
+      <MultipleInputs />
     </>
   );
 }
