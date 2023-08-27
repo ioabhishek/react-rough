@@ -1,10 +1,10 @@
 import "./App.css";
-import MultipleInputs from "./components/MultipleInputs";
+import ObjectInArray from "./components/ObjectInArray";
 
 export default function App() {
   return (
     <>
-      <MultipleInputs />
+      <ObjectInArray />
     </>
   );
 }
