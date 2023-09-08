@@ -21,8 +21,6 @@ const MultipleInputs = () => {
     console.log(details)
   }
 
-  const uid =  useId().slice(0,8);
-
   return (
     <>
       <form onSubmit={handleSubmit}>

@@ -1,10 +1,10 @@
 import "./App.css";
-import ObjectInArray from "./components/ObjectInArray";
+import FormTableShow from "./components/MultipleInputTable/FormTableShow";
 
 export default function App() {
   return (
     <>
-      <ObjectInArray />
+      <FormTableShow />
     </>
   );
 }
