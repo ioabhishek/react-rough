@@ -1,10 +1,11 @@
 import "./App.css";
-import FormTableShow from "./components/MultipleInputTable/FormTableShow";
+import Delete from "./components/delete/Delete";
+
 
 export default function App() {
   return (
     <>
-      <FormTableShow />
+      <Delete/>
     </>
   );
 }

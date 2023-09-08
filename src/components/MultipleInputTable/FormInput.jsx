@@ -45,6 +45,14 @@ const MultipleInputTable = () => {
   const handleEditClick = (event, contact) => {
     event.preventDefault();
     setEditContactId(contact.id)
+
+    const formValues = {
+      name: contact.name,
+      email: contact.email,
+      phone: contact.phone
+    }
+
+    setEditFormData(formValues)
   }
 
   return (
@@ -55,7 +63,7 @@ const MultipleInputTable = () => {
         <input type="text" placeholder="Phone" name="phone" value={details.phone} onChange={handleChange}/>
         <button >Submit</button>
       </form>
-      <Table tableData={tableData} editContactId={editContactId} handleEditClick={handleEditClick}/>
+      <Table tableData={tableData} editContactId={editContactId} handleEditClick={handleEditClick} editFormData={editFormData}/>
     </>
   )
 }

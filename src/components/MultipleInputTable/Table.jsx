@@ -2,10 +2,10 @@ import { nanoid } from "nanoid"
 import ReadOnlyRow from "./ReadOnlyRow";
 import EditableRow from "./EditableRow";
 
-const Table = ({tableData, editContactId, handleEditClick}) => {
+const Table = ({tableData, editContactId, handleEditClick, editFormData}) => {
 
   return (
-    <>
+    <form>
       <table>
         <thead>
           <tr>
@@ -21,7 +21,7 @@ const Table = ({tableData, editContactId, handleEditClick}) => {
               <>
                 {
                   editContactId === data.id ? (
-                    <EditableRow/>
+                    <EditableRow editFormData={editFormData} handleEditFormChange={handleEditFormChange}/>
                   ) : (
                     <ReadOnlyRow key={data.id} data={data} handleEditClick={handleEditClick}/>
                   )
@@ -31,7 +31,7 @@ const Table = ({tableData, editContactId, handleEditClick}) => {
           }
         </tbody>
       </table>
-    </>
+    </form>
   )
 }
 
